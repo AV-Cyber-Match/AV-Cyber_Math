@@ -1,71 +1,109 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <title>IT школа</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Головна</a></li>
-          <li><a href="courses.html">Курси</a></li>
-          <li><a href="about.html">Про нас</a></li>
-          <li><a href="contact.html">Контакти</a></li>
-        </ul>
-      </nav>
-      <h1>IT ШКОЛА</h1>
-      <p>Навчайтеся від кращих</p>
-      <a href="#" class="btn">Дізнатися більше</a>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="logo.png" alt="IT школа">
+        </div>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Курси</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <main>
-      <section>
-        <h2>Найпопулярніші курси</h2>
-        <div class="card">
-          <img src="course-1.jpg" alt="Course 1">
-          <h3>Курс 1</h3>
-          <p>Опис курсу</p>
-          <a href="#" class="btn">Детальніше</a>
+    <section class="intro">
+        <div class="intro__container">
+            <h1>Навчіться фронтенду, джава скрипт та пайтону в IT школі</h1>
+            <p>Долучайтеся до нашої спільноти професіоналів, щоб вивчити нові технології та розвинути свої навички.</p>
+            <a href="#" class="btn">Дізнатися більше</a>
         </div>
-        <div class="card">
-          <img src="course-2.jpg" alt="Course 2">
-          <h3>Курс 2</h3>
-          <p>Опис курсу</p>
-          <a href="#" class="btn">Детальніше</a>
+    </section>
+    <section class="courses">
+        <div class="courses__container">
+            <h2>Наші курси</h2>
+            <div class="courses__grid">
+                <div class="course">
+                    <div class="course__icon">
+                        <img src="course-1.png" alt="Курс фронтенду">
+                    </div>
+                    <h3>Курс фронтенду</h3>
+                    <p>Освійте HTML, CSS та JavaScript для створення сучасних та динамічних веб-сайтів.</p>
+                    <a href="#" class="btn btn--course">Дізнатися більше</a>
+                </div>
+                <div class="course">
+                    <div class="course__icon">
+                        <img src="course-2.png" alt="Курс джава скрипт">
+                    </div>
+                    <h3>Курс джава скрипт</h3>
+                    <p>Навчіться програмувати на мові JavaScript та використовувати його для створення веб-додатків.</p>
+                    <a href="#" class="btn btn--course">Дізнатися більше</a>
+                </div>
+                <div class="course">
+                    <div class="course__icon">
+                        <img src="course-3.png" alt="Курс пайтону">
+                    </div>
+                    <h3>Курс пайтону                </h3>
+                <p>Освоїть мову програмування Python для створення програм, веб-додатків та аналізу даних.</p>
+                <a href="#" class="btn btn--course">Дізнатися більше</a>
+            </div>
         </div>
-        <div class="card">
-          <img src="course-3.jpg" alt="Course 3">
-          <h3>Курс 3</h3>
-          <p>Опис курсу</p>
-          <a href="#" class="btn">Детальніше</a>
+    </div>
+</section>
+<section class="about">
+    <div class="about__container">
+        <h2>Про нас</h2>
+        <p>Ми - IT школа, яка надає найкращі курси з фронтенду, джава скрипту та пайтону. Наші викладачі - це досвідчені професіонали з багаторічним досвідом роботи в IT-галузі. Ми гарантуємо вам найвищу якість навчання та практичних завдань.</p>
+    </div>
+</section>
+<section class="contact">
+    <div class="contact__container">
+        <h2>Контакти</h2>
+        <p>Зв'яжіться з нами, щоб дізнатися більше про наші курси та послуги.</p>
+        <form action="#" class="contact__form">
+            <div class="contact__form-group">
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="contact__form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="contact__form-group">
+                <label for="message">Повідомлення</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn--submit">Надіслати</button>
+        </form>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__logo">
+            <img src="logo-white.png" alt="IT школа">
         </div>
-      </section>
-      <section>
-        <h2>Новини та події</h2>
-        <div class="news-item">
-          <img src="news-1.jpg" alt="News 1">
-          <h3>Заголовок новини</h3>
-          <p>Опис новини</p>
-          <a href="#" class="btn">Детальніше</a>
+        <nav class="footer__nav">
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Курси</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="footer__social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
-        <div class="news-item">
-          <img src="news-2.jpg" alt="News 2">
-          <h3>Заголовок новини</h3>
-          <p>Опис новини</p>
-          <a href="#" class="btn">Детальніше</a>
-        </div>
-        <div class="news-item">
-          <img src="news-3.jpg" alt="News 3">
-          <h3>Заголовок новині</h3>
-			<p>Опис новини</p>
-			<a href="#" class="btn">Детальніше</a>
-			</div>
-	   </section>
-	</main>
-	<footer>
-	<p>© IT ШКОЛА 2023</p>
-	</footer>
-  </body>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
 </html>

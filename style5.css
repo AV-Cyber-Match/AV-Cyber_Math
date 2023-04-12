@@ -1,0 +1,737 @@
+/* Загальні стилі */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Стилі для заголовків */
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+/* Стилі для хедера */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.header__logo img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.header__nav ul {
+  display: flex;
+}
+
+.header__nav li {
+  margin-right: 20px;
+}
+
+.header__nav li:last-child {
+  margin-right: 0;
+}
+
+.header__nav a {
+  font-weight: bold;
+}
+
+/* Стилі для секцій */
+.intro,
+.courses,
+.about,
+.contact {
+  padding: 50px 0;
+}
+
+.intro__container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 48px;
+}
+
+.intro p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+/* Стилі для курсів */
+.courses__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.courses h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.courses__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
+.course {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.course__icon img {
+  width: 100%;
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+.course h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.course p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn--course {
+  display: block;
+  margin-top: 20px;
+}
+
+/* Стилі для про нас */
+.about__container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.about p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* Стилі для контактів */
+.contact__container {
+  max-width: 800px;
+margin: 0 auto;
+}
+
+.contact h2 {
+font-size: 36px;
+margin-bottom: 50px;
+}
+
+.contact__info {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.contact__item {
+flex-basis: calc(33.33% - 40px);
+margin: 20px;
+text-align: center;
+}
+
+.contact__icon {
+font-size: 48px;
+margin-bottom: 20px;
+}
+
+.contact__text {
+font-size: 24px;
+}
+
+.contact__form {
+max-width: 600px;
+margin: 0 auto;
+text-align: center;
+}
+
+.contact__input {
+display: block;
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-size: 18px;
+}
+
+.contact__textarea {
+display: block;
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-size: 18px;
+}
+
+.contact__submit {
+display: block;
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 18px;
+cursor: pointer;
+}
+
+.contact__submit:hover {
+background-color: #444;
+}
+/* контактів */
+
+.contact__container {
+max-width: 800px;
+margin: 0 auto;
+text-align: center;
+}
+
+.contact h2 {
+font-size: 36px;
+margin-bottom: 50px;
+}
+
+.contact__info {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.contact__info-item {
+margin-right: 30px;
+margin-bottom: 30px;
+text-align: center;
+}
+
+.contact__info-item:last-child {
+margin-right: 0;
+}
+
+.contact__info-item img {
+width: 100%;
+max-width: 50px;
+margin-bottom: 10px;
+}
+
+.contact__info-item h3 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.contact__info-item p {
+font-size: 18px;
+}
+
+.contact__form {
+max-width: 600px;
+margin: 0 auto;
+}
+
+.contact__form label {
+display: block;
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.contact__form input,
+.contact__form textarea {
+display: block;
+width: 100%;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+margin-bottom: 20px;
+font-size: 16px;
+}
+
+.contact__form button {
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 18px;
+border: none;
+cursor: pointer;
+}
+
+.contact__form button:hover {
+background-color: #444;
+}
+
+/* Стилі для футера */
+.footer {
+background-color: #f2f2f2;
+padding: 50px 0;
+}
+
+.footer__container {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.footer__logo img {
+width: 100%;
+max-width: 200px;
+}
+
+.footer__nav ul {
+display: flex;
+}
+
+.footer__nav li {
+margin-right: 20px;
+}
+
+.footer__nav li:last-child {
+margin-right: 0;
+}
+
+.footer__nav a {
+font-weight: bold;
+}
+
+.footer__social {
+display: flex;
+justify-content: center;
+margin-top: 30px;
+}
+
+.footer__social-link {
+display: inline-block;
+width: 50px;
+height: 50px;
+margin-right: 20px;
+background-color: #333;
+color: #fff;
+text-align: center;
+line-height: 50px;
+border-radius: 50%;
+}
+
+.footer__social-link:last-child {
+margin-right: 0;
+}
+
+
+
+
+Andriy Zhornyak
+продовжуй
+
+.contact__container {
+max-width: 800px;
+margin: 0 auto;
+text-align: center;
+}
+
+.contact h2 {
+font-size: 36px;
+margin-bottom: 50px;
+}
+
+.contact__form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.contact__input {
+width: 100%;
+max-width: 500px;
+margin-bottom: 20px;
+padding: 10px;
+font-size: 18px;
+border-radius: 5px;
+border: 1px solid #ddd;
+}
+
+.contact__textarea {
+width: 100%;
+max-width: 500px;
+margin-bottom: 20px;
+padding: 10px;
+font-size: 18px;
+border-radius: 5px;
+border: 1px solid #ddd;
+}
+
+.btn--contact {
+display: block;
+margin-top: 20px;
+}
+
+/* Стилі для футера */
+.footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+.footer p {
+margin-bottom: 10px;
+}
+
+.footer__social {
+margin-bottom: 20px;
+}
+
+.footer__social img {
+width: 30px;
+margin-right: 10px;
+}
+
+.footer__copy {
+font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+.header {
+flex-direction: column;
+align-items: stretch;
+}
+
+.header__logo {
+margin-bottom: 20px;
+}
+
+.header__nav {
+margin-top: 20px;
+}
+
+.header__nav li {
+margin-right: 10px;
+}
+
+.intro h1 {
+font-size: 36px;
+}
+
+.intro p {
+font-size: 20px;
+}
+
+.courses h2 {
+font-size: 24px;
+margin-bottom: 30px;
+}
+
+.course__icon img {
+max-width: 80px;
+}
+
+.course h3 {
+font-size: 20px;
+margin-bottom: 5px;
+}
+
+.course p {
+font-size: 16px;
+margin-bottom: 15px;
+}
+
+.about h2 {
+font-size: 24px;
+margin-bottom: 30px;
+}
+
+.about p {
+font-size: 20px;
+margin-bottom: 20px;
+}
+
+.contact h2 {
+font-size: 24px;
+margin-bottom: 30px;
+}
+
+.contact__input,
+.contact__textarea {
+max-width: 100%;
+}
+}
+
+
+
+
+Andriy Zhornyak
+продовжуй
+
+.contact__form input[type="text"],
+.contact__form input[type="email"],
+.contact__form textarea {
+display: block;
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: 1px solid #ddd;
+font-size: 18px;
+}
+
+.contact__form textarea {
+height: 200px;
+}
+
+.btn--submit {
+display: block;
+margin-top: 20px;
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 18px;
+}
+
+.btn--submit:hover {
+background-color: #444;
+}
+
+/* Стилі для футера */
+.footer {
+background-color: #333;
+color: #fff;
+padding: 50px 0;
+}
+
+.footer__container {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+}
+
+.footer__nav ul {
+display: flex;
+}
+
+.footer__nav li {
+margin-right: 20px;
+}
+
+.footer__nav li:last-child {
+margin-right: 0;
+}
+
+.footer__nav a {
+font-weight: bold;
+color: #fff;
+}
+
+.footer__social ul {
+display: flex;
+}
+
+.footer__social li {
+margin-right: 20px;
+}
+
+.footer__social li:last-child {
+margin-right: 0;
+}
+
+.footer__social a {
+display: block;
+color: #fff;
+font-size: 24px;
+}
+
+.footer__copy {
+text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+.header {
+flex-direction: column;
+}
+
+.header__logo,
+.header__nav {
+width: 100%;
+text-align: center;
+}
+
+.header__nav {
+margin-top: 20px;
+}
+
+.header__nav li {
+margin-right: 10px;
+}
+
+.intro h1 {
+font-size: 36px;
+}
+
+.intro p {
+font-size: 20px;
+}
+
+.courses__grid {
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 20px;
+}
+
+.course h3 {
+font-size: 20px;
+}
+
+.course p {
+font-size: 16px;
+}
+
+.about h2 {
+font-size: 24px;
+}
+
+.about p {
+font-size: 20px;
+}
+
+.contact__form input[type="text"],
+.contact__form input[type="email"],
+.contact__form textarea {
+font-size: 16px;
+}
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.footer__social a {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.footer__social i {
+  font-size: 24px;
+  color: #333;
+}
+
+.footer__social i:hover {
+  color: #666;
+}
+/* Загальні стилі */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.footer__nav ul {
+  display: flex;
+}
+
+.footer__nav li {
+  margin-right: 20px;
+}
+
+.footer__nav li:last-child {
+  margin-right: 0;
+}
+
+.footer__nav a {
+  font-weight: bold;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+.footer__social a:last-child {
+  margin-right: 0;
+}
+
+.footer__social i {
+  font-size: 24px;
+  color: #333;
+}
